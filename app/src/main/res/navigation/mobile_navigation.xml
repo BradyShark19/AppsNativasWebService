@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Aqui se define la Navegacion de la App-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="projecto.web.service.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="projecto.web.service.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="projecto.web.service.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/desarrolladorFragment"
+        android:name="projecto.web.service.DesarrolladorFragment"
+        android:label="fragment_desarrollador"
+        tools:layout="@layout/fragment_desarrollador" />
+    <fragment
+        android:id="@+id/consultaListaUserFragment"
+        android:name="projecto.web.service.ui.consultalistausers.ConsultaListaUserFragment"
+        android:label="consulta_lista_user_fragment"
+        tools:layout="@layout/consulta_lista_user_fragment" />
+</navigation>

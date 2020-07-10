@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Aqui se edita la informacion del Menu Lateral (Izquierda)-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Registrar Usuario" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Consultar Usuario" />
+
+        <item
+            android:id="@+id/consultaListaUserFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Consultar Lista de Usuarios" />
+
+    <!--Tiene que ser el mismo Id con el cual se creó el Fragment-->
+        <item
+            android:id="@+id/desarrolladorFragment"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Fragment Desarrollador" />
+    </group>
+</menu>
